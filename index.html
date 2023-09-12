@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html class="html">
+<html id="scroll">
   <head>
     <title>Johnathon's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body class="img-wallpaper">
+    <nav>
+      <table>
+          <tr>
+              <td><a href="#about_me" class="buttons">About</a></td>
+              <td><a href="#skills" class="buttons" >Skills</a></td>
+              <td><a href="#projects" class="buttons">Projects</a></td>
+          </tr>
+      </table>
+  </nav>
     <div class="my_skill">
       <section id="about_me" ><h1 class="header"> Hello, Im Johnathon</h1>
-        <h1>My Background</h1>
+        <h1 class="sections">My Background</h1>
         <p class="paragraph">
           Hello, My name is Johnathon King and I was born in Tupelo, Ms and I continue to live there as of now. I have had four jobs so far, each of which I became top employee in them. I graduated highschool in May of 2023 and started at Base Camp Coding Academy in June the same year.  
         </p>
@@ -16,8 +26,8 @@
       
         <div class="my_skill">
           <section id="skills">
-            <h1>My Skills</h1>
-            <div class="scroll-container">
+            <h1 class="sections">My Skills</h1>
+            <div>
               <img src="images/download.png" class="img">
               <img src="images/download.jpg" class="img">
               <img src="images/css.jpg" class="img">
@@ -31,9 +41,9 @@
         </div>
         <div class="my_skill">
           <section id="projects">
-            <h1>My Projects</h1>
+            <h1 id="project_heading sections">My Projects</h1>
             <a href="https://replit.com/@jking24/Sliver-Coin-Bank" target="_blank">
-              <img class="projects" src="images/python.jpg">
+              <img class="projects" src="images/python.jpg"><p id="project_name">Silver Coin Bank</p>
             </a>
             <p class="paragraph">This is my first python project, it was to replicate the actions and steps you would take at a bank for financial decisions</p> 
           </section>
