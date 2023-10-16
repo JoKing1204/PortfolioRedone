@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html id="scroll">
+<html lang="en">
   <head>
     <title>Johnathon's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body class="img-wallpaper">
-    <nav>
-      <table>
-          <tr>
-              <td><a href="#about_me" class="buttons">About</a></td>
-              <td><a href="#skills" class="buttons" >Skills</a></td>
-              <td><a href="#projects" class="buttons">Projects</a></td>
-          </tr>
-      </table>
-  </nav>
     <div class="my_skill">
       <section id="about_me" ><h1 class="header"> Hello, Im Johnathon</h1>
+        <nav>
+          <table>
+              <tr>
+                <td><a href="#about_me" class="buttons">About</a></td>
+                <td><a href="#skills" class="buttons" id="skills-button">Skills</a></td>
+                <td><a href="#projects" class="buttons" id="projects-button">Projects</a></td>
+                </tr>
+          </table>
+      </nav>
         <h1 class="sections">My Background</h1>
         <p class="paragraph">
           Hello, My name is Johnathon King and I was born in Tupelo, Ms and I continue to live there as of now. I have had four jobs so far, each of which I became top employee in them. I graduated highschool in May of 2023 and started at Base Camp Coding Academy in June the same year.  
         </p>
       </section>
+      
         
       
         <div class="my_skill">
@@ -35,7 +36,7 @@
               <img src="images/django.png" class="img">
               <img src="images/java.png" class="img">
               <img src="images/javascript.png" class="img">
-              <img src="images/spring.png" class="img">
+              <img  src="images/spring.png" class="img">
             </div>
           </section>
         </div>
@@ -43,14 +44,16 @@
           <section id="projects">
             <h1 id="project_heading sections">My Projects</h1>
             <a href="https://replit.com/@jking24/Sliver-Coin-Bank" target="_blank">
-              <img class="projects" src="images/python.jpg"><p id="project_name">Silver Coin Bank</p>
+              <img id="shakeImage" class="projects" src="images/python.jpg"><p id="project_name">Silver Coin Bank</p>
             </a>
+            <button onclick="startShake()">Shake Images</button>
+            <button onclick="stopShake()">Stop Shaking</button>
             <p class="paragraph">This is my first python project, it was to replicate the actions and steps you would take at a bank for financial decisions</p> 
           </section>
         </div>
       
 
     </div>
-    
+    <script src="main.js"></script> 
   </body>
 </html>
