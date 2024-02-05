@@ -1,59 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johnathon's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="..." crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.19.0/font/bootstrap-icons.css" integrity="...">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="..." defer></script>
+    <script src="https://kit.fontawesome.com/f5b47743ed.js" crossorigin="anonymous"></script>
   </head>
   <body class="img-wallpaper">
-    <div class="my_skill">
-      <section id="about_me" ><h1 class="header"> Hello, Im Johnathon</h1>
-        <nav>
-          <table>
-              <tr>
-                <td><a href="#about_me" class="buttons">About</a></td>
-                <td><a href="#skills" class="buttons" id="skills-button">Skills</a></td>
-                <td><a href="#projects" class="buttons" id="projects-button">Projects</a></td>
-                </tr>
-          </table>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Johnathon's Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
       </nav>
-        <h1 class="sections">My Background</h1>
+    </header>
+
+    <main class="container mt-4">
+      <section id="about_me">
+        <h1 class="header">Johnathon King</h1>
+        <img src="images/john.jpeg" class="pic_img"/>
+        <h2 class="sections">My Background</h2>
         <p class="paragraph">
-          Hello, My name is Johnathon King and I was born in Tupelo, Ms and I continue to live there as of now. I have had four jobs so far, each of which I became top employee in them. I graduated highschool in May of 2023 and started at Base Camp Coding Academy in June the same year.  
+          Hey, my name is Johnathon King. I was born in Tupelo, MS, and have been living there since 2004-Current. With a track record of excelling in my jobs, I have managed to have a great expeirence in the work force and I am always ready for a challenge no matter what a job or life throws at me.  I graduated high school in May of 2023 and started at</p> <a href="https://www.youtube.com/watch?v=TsJdvvRk7mI" style="color:black;" target="_blank" class="paragraph">Base Camp Coding Academy</a><p class="paragraph"> in June of the same year. I graduate Base Camp in May of 2024 and start to work right after. I am always estatic to help others or be able to have a solution to any problem that I know I can fix.</p>
         </p>
       </section>
-      
-        
-      
+      <section class="skills-frameworks">
         <div class="my_skill">
-          <section id="skills">
-            <h1 class="sections">My Skills</h1>
-            <div>
-              <img src="images/download.png" class="img">
-              <img src="images/download.jpg" class="img">
-              <img src="images/css.jpg" class="img">
-              <img src="images/html.jpg" class="img">
-              <img src="images/django.png" class="img">
-              <img src="images/java.png" class="img">
-              <img src="images/javascript.png" class="img">
-              <img  src="images/spring.png" class="img">
+          <section id="skills" class="sections">
+            <h1 class="header">My Skills</h1>
+            <div class="skills-list">
+              <ul>
+                <li><i class="bi bi-check"></i> Python</li>
+                <li><i class="bi bi-check"></i> HTML5</li>
+                <li><i class="bi bi-check"></i> CSS3</li>
+                <li><i class="bi bi-check"></i> JavaScript</li>
+              </ul>
             </div>
           </section>
         </div>
-        <div class="my_skill">
-          <section id="projects">
-            <h1 id="project_heading sections">My Projects</h1>
-            <a href="https://replit.com/@jking24/Sliver-Coin-Bank" target="_blank">
-              <img id="shakeImage" class="projects" src="images/python.jpg"><p id="project_name">Silver Coin Bank</p>
-            </a>
-            <button onclick="startShake()">Shake Images</button>
-            <button onclick="stopShake()">Stop Shaking</button>
-            <p class="paragraph">This is my first python project, it was to replicate the actions and steps you would take at a bank for financial decisions</p> 
+  
+        <div class="frameworks">
+          <section id="frameworks" class="sections">
+            <h1 class="header">Frameworks</h1>
+            <div class="skills-list">
+              <ul>
+                <li><i class="bi bi-check"></i> Django</li>
+                <li><i class="bi bi-check"></i> React</li>
+                <li><i class="bi bi-check"></i>Bootstrap Basics</li>
+                <li><i class="bi bi-check"></i> Spring </li>
+              </ul>
+            </div>
           </section>
         </div>
-      
+      </section>
+    </main>
 
-    </div>
-    <script src="main.js"></script> 
+    <footer class="text-center mt-4">
+      <section class="contact">
+        <h2 class="sections">Contact</h2>
+        
+        <a href="mailto:jwaynek04@gmail.com" class="fa-regular fa-envelope fa-2xl" style="text-decoration: none;color: black; padding-right:20px;"></a>
+        <a href="www.linkedin.com/in/jk23" class="fa-brands fa-linkedin fa-2xl" style="text-decoration: none;color: black;padding-right:20px;"></a>
+        <a href="https://github.com/JoKing1204" class="fa-brands fa-github fa-2xl" style="text-decoration: none;color: black;padding-left: 5x;"></a>
+      </section>
+      <p>&copy; 2024 Johnathon's Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
